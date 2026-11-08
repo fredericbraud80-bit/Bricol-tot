@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ed">
+  <meta name="description" content="BRICOL-TOT, votre partenaire bricolage, petits travaux, réparations et entretien de jardin.">
+  <link rel="icon" href="mascotte.jpg" type="image/jpeg">
+  <title>BRICOL-TOT — Les petits travaux, bien faits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="BRICOL-TOT, accueil">
+      <img class="brand-mascot" src="mascotte.jpg" alt="">
+      <span class="brand-name">BRICOL-<strong>TOT</strong><small>MULTI-SERVICES</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="#realisations">Réalisations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="tel:+33612345678">06 12 34 56 78</a>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Votre artisan multi-services</p>
+        <h1>BRICOL-<span>TOT</span></h1>
+        <p class="hero-description">Un coup de main pour la maison, un jardin à remettre en ordre ou une réparation à faire ? Je m’occupe de vos petits travaux avec soin et bonne humeur.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#contact">Parlons de votre projet</a>
+          <a class="phone-link" href="tel:+33612345678"><span class="phone-icon" aria-hidden="true">☎</span><span><small>Appelez-moi directement</small>06 12 34 56 78</span></a>
+        </div>
+        <div class="hero-note"><span class="check" aria-hidden="true">✓</span> Travail soigné <span class="note-divider"></span> Proximité & confiance</div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1646119945537-2a73112f5913?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Artisan en train de réaliser des travaux de bricolage">
+        <div class="image-label"><span class="label-icon" aria-hidden="true">✳</span><span>Un projet en tête ?<small>Je suis là pour vous aider.</small></span></div>
+        <span class="hero-stamp" aria-hidden="true">À VOTRE<br>SERVICE <b>✳</b></span>
+      </div>
+      <div class="hero-vertical" aria-hidden="true">BRICOL-TOT · MULTI-SERVICES · BRICOL-TOT ·</div>
+    </section>
+
+    <section class="portfolio section-pad" id="realisations">
+      <div class="section-heading portfolio-heading">
+        <div><p class="eyebrow">Du concret, et du bien fait</p><h2>Quelques travaux<br><span>réalisés.</span></h2></div>
+        <p>Chaque projet est différent. Voici un aperçu de mes interventions — cliquez sur une catégorie pour découvrir les travaux.</p>
+      </div>
+      <div class="filter-row" role="group" aria-label="Filtrer les réalisations">
+        <button class="filter-button is-active" type="button" data-filter="tout" aria-pressed="true">Tout voir <span>06</span></button>
+        <button class="filter-button" type="button" data-filter="maison" aria-pressed="false">Maison</button>
+        <button class="filter-button" type="button" data-filter="reparation" aria-pressed="false">Réparation</button>
+        <button class="filter-button" type="button" data-filter="jardin" aria-pressed="false">Jardin</button>
+      </div>
+      <div class="gallery-grid">
+        <article class="gallery-card gallery-card-large" data-category="maison"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85" alt="Intérieur lumineux après des travaux de finition" loading="lazy"><div class="gallery-caption"><span>Maison</span><h3>Finitions & aménagement</h3></div></article>
+        <article class="gallery-card" data-category="jardin"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=900&q=85" alt="Jardin entretenu avec soin" loading="lazy"><div class="gallery-caption"><span>Jardin</span><h3>Entretien des espaces verts</h3></div></article>
+        <article class="gallery-card" data-category="reparation"><img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=900&q=85" alt="Outils prêts pour une intervention de réparation" loading="lazy"><div class="gallery-caption"><span>Réparation</span><h3>Petites réparations</h3></div></article>
+        <article class="gallery-card" data-category="maison"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=85" alt="Pièce de vie aménagée" loading="lazy"><div class="gallery-caption"><span>Maison</span><h3>Montage & installation</h3></div></article>
+        <article class="gallery-card" data-category="jardin"><img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=900&q=85" alt="Plantes et espace extérieur entretenus" loading="lazy"><div class="gallery-caption"><span>Jardin</span><h3>Nettoyage extérieur</h3></div></article>
+        <article class="gallery-card" data-category="reparation"><img src="https://images.unsplash.com/photo-1780445392484-5fb7d5610708?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Travaux de réparation dans une maison" loading="lazy"><div class="gallery-caption"><span>Réparation</span><h3>Dépannage à domicile</h3></div></article>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact">
+      <div class="contact-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Parlons-en</p>
+        <h2>Un projet ?<br>Un petit <span>souci ?</span></h2>
+        <p class="contact-intro">Décrivez-moi ce dont vous avez besoin. Je vous répondrai rapidement pour en discuter et trouver la bonne solution.</p>
+        <a class="contact-detail" href="tel:+33612345678"><span class="detail-icon" aria-hidden="true">☎</span><span><small>Un appel, et on en parle</small>06 12 34 56 78</span></a>
+        <a class="contact-detail" href="mailto:contact@bricoltot.fr"><span class="detail-icon" aria-hidden="true">✉</span><span><small>Écrivez-moi</small>contact@bricoltot.fr</span></a>
+        <div class="contact-meta">
+          <div><span class="meta-label">HORAIRES</span><p>Lun. – ven. : 8h30 – 18h<br></p></div>
+          <div><span class="meta-label">ZONE D’INTERVENTION</span><p>Cerdagne et ses alentours<br></p></div>
+        </div>
+      </div>
+      <div class="map-card">
+        <iframe title="Carte de Bourg-Madame et de la zone d’intervention de BRICOL-TOT" src="https://maps.google.com/maps?q=Bourg-Madame%2066760%20France&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        
+      </div>
+      <img class="contact-van" src="camion.jpg" alt="Camion de bricolage et jardinage BRICOL-TOT" loading="lazy">
+    </section>
+
+    <section class="closing-banner">
+      <p>Besoin d’un coup de main ?</p><a href="tel:+33612345678">On en parle au <strong>06 12 34 56 78</strong></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#accueil" aria-label="BRICOL-TOT, retour en haut"><img class="brand-mascot" src="mascotte.jpg" alt=""><span class="brand-name">BRICOL-<strong>TOT</strong><small>MULTI-SERVICES</small></span></a>
+    <p>Les petits travaux, bien faits. <span>© <span id="current-year"></span> BRICOL-TOT</span></p>
+    <button class="legal-trigger" type="button" aria-haspopup="dialog" aria-controls="legal-modal">Mentions légales</button>
+  </footer>
+
+  <dialog class="legal-modal" id="legal-modal" aria-labelledby="legal-title">
+    <div class="modal-header"><div><p class="eyebrow">Informations légales</p><h2 id="legal-title">Mentions légales</h2></div><button class="modal-close" type="button" aria-label="Fermer les mentions légales">×</button></div>
+    <div class="legal-content">
+      <p><strong>Éditeur du site</strong><br>BRICOL-TOT — Bricol-tot Multi-services<br>Forme juridique : [à compléter] · Capital social : [à compléter]<br>Siège social : [adresse complète à compléter]<br>SIRET : [à compléter] · RCS : [ville et numéro à compléter]<br>Téléphone : 06 12 34 56 78 · E-mail : contact@bricoltot.fr</p>
+      <p><strong>Directeur de la publication</strong><br>[Nom du responsable à compléter]</p>
+      <p><strong>Hébergement</strong><br>[Nom de l’hébergeur, adresse et coordonnées à compléter]</p>
+      <p><strong>Propriété intellectuelle</strong><br>Les textes, visuels et éléments présents sur ce site sont protégés par le droit de la propriété intellectuelle. Toute reproduction sans autorisation préalable est interdite.</p>
+      <p><strong>Données personnelles</strong><br>Les informations transmises par e-mail ou téléphone sont utilisées uniquement pour répondre à votre demande. Pour toute question relative à vos données, contactez : contact@bricoltot.fr.</p>
+      <p class="legal-warning">Pensez à remplacer les champs entre crochets par les informations exactes de votre entreprise avant la mise en ligne. Ce modèle est fourni à titre indicatif.</p>
+    </div>
+  </dialog>
+</body>
+</html>
