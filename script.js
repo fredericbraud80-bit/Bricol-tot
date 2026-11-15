@@ -4,6 +4,12 @@ const legalModal = document.querySelector("#legal-modal");
 const legalTrigger = document.querySelector(".legal-trigger");
 const modalClose = document.querySelector(".modal-close");
 
+const applyGalleryFilter = (category) => {
+  galleryCards.forEach((card) => {
+    card.hidden = category !== "tout" && card.dataset.category !== category;
+  });
+};
+
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const category = button.dataset.filter;
@@ -14,11 +20,11 @@ filterButtons.forEach((button) => {
       filterButton.setAttribute("aria-pressed", String(isActive));
     });
 
-    galleryCards.forEach((card) => {
-      card.hidden = category !== "tout" && card.dataset.category !== category;
-    });
+    applyGalleryFilter(category);
   });
 });
+
+applyGalleryFilter(document.querySelector(".filter-button.is-active").dataset.filter);
 
 legalTrigger.addEventListener("click", () => legalModal.showModal());
 modalClose.addEventListener("click", () => legalModal.close());
